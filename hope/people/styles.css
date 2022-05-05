@@ -11726,7 +11726,7 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 0.5;
   transition: .5s ease;
   background-color: #000000;
 }
@@ -11737,7 +11737,7 @@ body {
 
 .text {
   color: white;
-  font-size: 28px;
+  font-size: 5vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11749,7 +11749,7 @@ body {
 
 .text2 {
   color: white;
-  font-size: 28px;
+  font-size: 5vw;
   position: absolute;
   top: 50%;
   left: 50%;
