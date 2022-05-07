@@ -1,0 +1,7 @@
+Hi there! My name is Neal Haddaway, and I'm a researcher/photographer. My background is in conservation biology, but I've spent the best part of 15 years conducting research into various aspects of environmental science, from invasion biology to social science and a bit of everything in between. Since 2012, I've been working with evidence synthesis - the collation and appraisal of research evidence to support better decision making. I've developed methods for evidence synthesis, with an emphasis on using technology to support more accessible, comprehensive, transparent and rigorous syntheses.  
+
+In 2017, I started the [Evidence Synthesis Hackathon](https://www.eshackathon.org/), a series of events to develop needs-based, Open Source tools for evidence synthesis. In 2020, I established the [Evidence Synthesis and Meta-Analysis in R Conference (ESMARConf)](https://esmarconf.github.io/), which has run annually since 2021. This online, free conference highlights tools for evidence synthesis in R and supports a large, vibrant community of practice across the globe interested in learning about, developing and using R for evidence synthesis.  
+
+I'm also a photographer, with a keen interest in documentary photography and photojournalism for communicating some of our toughest social and environmental problems. Check out my latest project, ['Hope? and how to grieve for the planet'](http://www.nealhaddaway.com/hope/):    
+
+<img src="https://github.com/nealhaddaway/nealhaddaway.github.io/blob/master/hope/assets/img/preview.jpg?raw=true" width="50%">
