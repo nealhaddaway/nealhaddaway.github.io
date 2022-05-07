@@ -4,4 +4,4 @@ In 2017, I started the [Evidence Synthesis Hackathon](https://www.eshackathon.or
 
 I'm also a photographer, with a keen interest in documentary photography and photojournalism for communicating some of our toughest social and environmental problems. Check out my latest project, ['Hope? and how to grieve for the planet'](http://www.nealhaddaway.com/hope/):    
 
-<img src="https://github.com/nealhaddaway/nealhaddaway.github.io/blob/master/hope/assets/img/preview.jpg?raw=true" width="50%">
+<a href="http://www.nealhaddaway.com/hope/" target="_blank"><img src="https://github.com/nealhaddaway/nealhaddaway.github.io/blob/master/hope/assets/img/preview.jpg?raw=true" width="50%"></a>
