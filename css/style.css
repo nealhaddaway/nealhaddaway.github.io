@@ -143,6 +143,19 @@ hr {
 	border-color: #121d1f;
 }
 /* Header Section */
+.intro2 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	color: #333;
+	background: url(../img/intro-bg.jpg) no-repeat center;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
 .intro {
 	display: table;
 	width: 100%;
