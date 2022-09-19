@@ -23,6 +23,9 @@
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
+<!-- Carousel -->
+<link rel="stylesheet" type="text/css"  href="css/carousel.css">
+
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
@@ -84,6 +87,20 @@
     </div>
   </nav>
 </div>
+
+<!-- Carousel Section -->
+<div class="w3-content w3-section center">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0039.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0768.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0935.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0748.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0502.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0622.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0407.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0042.jpg" style="width:50%">
+        <img class="mySlides w3-animate-fading center" src="img/portfolio/drone/DJI_0800.jpg" style="width:50%">
+    </div>
+<!-- End of Carousel Section -->
 
 <!-- About Section -->
 <div id="about">
@@ -374,5 +391,23 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
 </body>
 </html>
