@@ -217,7 +217,7 @@ header .intro-text {
 /* Social Section */
 #social {
 	padding: 120px 0;
-	background: #f6f6f6;
+	background: #fff;
 }
 /* Portfolio Section */
 #portfolio {
@@ -350,6 +350,7 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
+	background: #f6f6f6;
 }
 #contact h3 {
 	padding-top: 20px;
