@@ -34,6 +34,55 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+<style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}      
+</style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -45,22 +94,16 @@
       <h2>Portfolio</h2>
       <hr>
     </div>
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".wildlife">Wildlife</a></li>
-            <li><a href="#" data-filter=".aerial">Aerial</a></li>
-            <li><a href="#" data-filter=".travel">Places</a></li>
-            <li><a href="#" data-filter=".people">Portraits</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
+    
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'People')" id="defaultOpen">People</button>
+  <button class="tablinks" onclick="openCity(event, 'Wildlife')">Wildlife</button>
+  <button class="tablinks" onclick="openCity(event, 'Aerial')">Aerial</button>
+  <button class="tablinks" onclick="openCity(event, 'Places')">Places</button>
+</div>
+
+<div id="Wildlife" class="tabcontent">
+  <div class="row">
         
         <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
           <div class="portfolio-item">
@@ -69,26 +112,6 @@
                 <h4>Lion in Nairobi National Park</h4>
               </div>
               <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Lion in Nairobi National Park"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Carmen" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Carmen</h4>
-              </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Carmen"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Motorway from above" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Motorway from above</h4>
-              </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Motorway from above"> </a> </div>
           </div>
         </div>
         
@@ -102,13 +125,59 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 travel">
+        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Barcelona evening" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/16-large.jpg" title="Sunbird, South Africa" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Barcelona evening</h4>
+                <h4>Sunbird, South Africa</h4>
               </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Barcelona evening"> </a> </div>
+              <img src="img/portfolio/16-small.jpg" class="img-responsive" alt="Sunbird, South Africa"> </a> </div>
+          </div>
+        </div>
+        
+         <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/21-large.jpg" title="Guanaco, Torres del Paine, Chile" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Guanaco, Torres del Paine, Chile</h4>
+              </div>
+              <img src="img/portfolio/21-small.jpg" class="img-responsive" alt="Guanaco, Torres del Paine, Chile"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/22-large.jpg" title="African wild dog, South Africa" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>African wild dog, South Africa</h4>
+              </div>
+              <img src="img/portfolio/22-small.jpg" class="img-responsive" alt="African wild dog, South Africa"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/25-large.jpg" title="Masai Mara National Park, Kenya" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Masai Mara National Park, Kenya</h4>
+              </div>
+              <img src="img/portfolio/25-small.jpg" class="img-responsive" alt="Masai Mara National Park, Kenya"> </a> </div>
+          </div>
+        </div>
+        
+  </div>
+</div>
+
+<div id="Aerial" class="tabcontent">
+  <div class="row">
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Motorway from above" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Motorway from above</h4>
+              </div>
+              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Motorway from above"> </a> </div>
           </div>
         </div>
         
@@ -119,46 +188,6 @@
                 <h4>Norwegian island</h4>
               </div>
               <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Norwegian island"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Woman in a doorway, Myanmar" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Woman in a doorway, Myanmar</h4>
-              </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Woman in a doorway, Myanmar"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 travel">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Abandoned school, Patagonia" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Abandoned school, Patagonia</h4>
-              </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Abandoned school, Patagonia"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Freya" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Freya</h4>
-              </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Freya"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 travel">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Scaling fish, Tanzania" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Scaling fish, Tanzania</h4>
-              </div>
-              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Scaling fish, Tanzania"> </a> </div>
           </div>
         </div>
         
@@ -182,23 +211,79 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
+        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/40-large.jpg" title="Alice" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/31-large.jpg" title="The eye" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Alice</h4>
+                <h4>The eye</h4>
               </div>
-              <img src="img/portfolio/40-small.jpg" class="img-responsive" alt="Alice"> </a> </div>
+              <img src="img/portfolio/31-small.jpg" class="img-responsive" alt="The eye"> </a> </div>
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
+        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/14-large.jpg" title="Masai child" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/30-large.jpg" title="Winding road, Italy" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Masai child</h4>
+                <h4>Winding road, Italy</h4>
               </div>
-              <img src="img/portfolio/14-small.jpg" class="img-responsive" alt="Masai child"> </a> </div>
+              <img src="img/portfolio/30-small.jpg" class="img-responsive" alt="Winding road, Italy"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/32-large.jpg" title="Potato harvest" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Potato harvest</h4>
+              </div>
+              <img src="img/portfolio/32-small.jpg" class="img-responsive" alt="Potato harvest"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/29-large.jpg" title="Waves" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Waves</h4>
+              </div>
+              <img src="img/portfolio/29-small.jpg" class="img-responsive" alt="Waves"> </a> </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="Places" class="tabcontent">
+  
+  <div class="row">
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 travel">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Barcelona evening" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Barcelona evening</h4>
+              </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Barcelona evening"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 travel">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Abandoned school, Patagonia" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Abandoned school, Patagonia</h4>
+              </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Abandoned school, Patagonia"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 travel">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Scaling fish, Tanzania" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Scaling fish, Tanzania</h4>
+              </div>
+              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Scaling fish, Tanzania"> </a> </div>
           </div>
         </div>
         
@@ -212,37 +297,7 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/31-large.jpg" title="The eye" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>The eye</h4>
-              </div>
-              <img src="img/portfolio/31-small.jpg" class="img-responsive" alt="The eye"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/39-large.jpg" title="Jack" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Jack</h4>
-              </div>
-              <img src="img/portfolio/39-small.jpg" class="img-responsive" alt="Jack"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/16-large.jpg" title="Sunbird, South Africa" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Sunbird, South Africa</h4>
-              </div>
-              <img src="img/portfolio/16-small.jpg" class="img-responsive" alt="Sunbird, South Africa"> </a> </div>
-          </div>
-        </div>
-        
-         <div class="col-sm-6 col-md-3 col-lg-3 travel">
+        <div class="col-sm-6 col-md-3 col-lg-3 travel">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/17-large.jpg" title="Chasing geese, Myanmar" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -262,46 +317,6 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/38-large.jpg" title="Close up" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Close up</h4>
-              </div>
-              <img src="img/portfolio/38-small.jpg" class="img-responsive" alt="Close up"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 travel">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/19-large.jpg" title="Protest reflections, London" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Protest reflections</h4>
-              </div>
-              <img src="img/portfolio/19-small.jpg" class="img-responsive" alt="Protest reflections, London"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/30-large.jpg" title="Winding road, Italy" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Winding road, Italy</h4>
-              </div>
-              <img src="img/portfolio/30-small.jpg" class="img-responsive" alt="Winding road, Italy"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/37-large.jpg" title="Studio" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Studio</h4>
-              </div>
-              <img src="img/portfolio/37-small.jpg" class="img-responsive" alt="Studio"> </a> </div>
-          </div>
-        </div>
-        
         <div class="col-sm-6 col-md-3 col-lg-3 travel">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/20-large.jpg" title="JustStopOil occupation, London" data-lightbox-gallery="gallery1">
@@ -309,36 +324,6 @@
                 <h4>JustStopOil occupation, London</h4>
               </div>
               <img src="img/portfolio/20-small.jpg" class="img-responsive" alt="JustStopOil occupation, London"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/21-large.jpg" title="Guanaco, Torres del Paine, Chile" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Guanaco, Torres del Paine, Chile</h4>
-              </div>
-              <img src="img/portfolio/21-small.jpg" class="img-responsive" alt="Guanaco, Torres del Paine, Chile"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/36-large.jpg" title="Boy with the hair" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Boy with the hair</h4>
-              </div>
-              <img src="img/portfolio/36-small.jpg" class="img-responsive" alt="Boy with the hair"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/22-large.jpg" title="African wild dog, South Africa" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>African wild dog, South Africa</h4>
-              </div>
-              <img src="img/portfolio/22-small.jpg" class="img-responsive" alt="African wild dog, South Africa"> </a> </div>
           </div>
         </div>
         
@@ -352,46 +337,6 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/24-large.jpg" title="Bearded smile" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Bearded smile</h4>
-              </div>
-              <img src="img/portfolio/24-small.jpg" class="img-responsive" alt="Bearded smile"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/32-large.jpg" title="Potato harvest" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Potato harvest</h4>
-              </div>
-              <img src="img/portfolio/32-small.jpg" class="img-responsive" alt="Potato harvest"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 wildlife">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/25-large.jpg" title="Masai Mara National Park, Kenya" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Masai Mara National Park, Kenya</h4>
-              </div>
-              <img src="img/portfolio/25-small.jpg" class="img-responsive" alt="Masai Mara National Park, Kenya"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/35-large.jpg" title="Cigarette break" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Cigarette break</h4>
-              </div>
-              <img src="img/portfolio/35-small.jpg" class="img-responsive" alt="Cigarette break"> </a> </div>
-          </div>
-        </div>
-        
         <div class="col-sm-6 col-md-3 col-lg-3 travel">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/26-large.jpg" title="Clown, Stockholm" data-lightbox-gallery="gallery1">
@@ -399,26 +344,6 @@
                 <h4>Clown, Stockholm</h4>
               </div>
               <img src="img/portfolio/26-small.jpg" class="img-responsive" alt="Clown, Stockholm"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 aerial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/29-large.jpg" title="Waves" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Waves</h4>
-              </div>
-              <img src="img/portfolio/29-small.jpg" class="img-responsive" alt="Waves"> </a> </div>
-          </div>
-        </div>
-        
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/34-large.jpg" title="River" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>River</h4>
-              </div>
-              <img src="img/portfolio/34-small.jpg" class="img-responsive" alt="River"> </a> </div>
           </div>
         </div>
         
@@ -432,16 +357,6 @@
           </div>
         </div>
         
-        <div class="col-sm-6 col-md-3 col-lg-3 people">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/33-large.jpg" title="Evi" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Evi</h4>
-              </div>
-              <img src="img/portfolio/33-small.jpg" class="img-responsive" alt="Evi"> </a> </div>
-          </div>
-        </div>
-        
         <div class="col-sm-6 col-md-3 col-lg-3 travel">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/28-large.jpg" title="Dogsled, Arctic" data-lightbox-gallery="gallery1">
@@ -452,37 +367,160 @@
           </div>
         </div>
         
+      </div>
+  
+</div>
+
+<div id="People" class="tabcontent">
+  
+  <div class="row">
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Carmen" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Carmen</h4>
+              </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Carmen"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Woman in a doorway, Myanmar" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Woman in a doorway, Myanmar</h4>
+              </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Woman in a doorway, Myanmar"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/14-large.jpg" title="Masai child" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Masai child</h4>
+              </div>
+              <img src="img/portfolio/14-small.jpg" class="img-responsive" alt="Masai child"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/39-large.jpg" title="Jack" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Jack</h4>
+              </div>
+              <img src="img/portfolio/39-small.jpg" class="img-responsive" alt="Jack"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/38-large.jpg" title="Close up" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Close up</h4>
+              </div>
+              <img src="img/portfolio/38-small.jpg" class="img-responsive" alt="Close up"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/19-large.jpg" title="Protest reflections, London" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Protest reflections</h4>
+              </div>
+              <img src="img/portfolio/19-small.jpg" class="img-responsive" alt="Protest reflections, London"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/37-large.jpg" title="Studio" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Studio</h4>
+              </div>
+              <img src="img/portfolio/37-small.jpg" class="img-responsive" alt="Studio"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/36-large.jpg" title="Boy with the hair" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Boy with the hair</h4>
+              </div>
+              <img src="img/portfolio/36-small.jpg" class="img-responsive" alt="Boy with the hair"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/24-large.jpg" title="Bearded smile" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Bearded smile</h4>
+              </div>
+              <img src="img/portfolio/24-small.jpg" class="img-responsive" alt="Bearded smile"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/35-large.jpg" title="Cigarette break" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Cigarette break</h4>
+              </div>
+              <img src="img/portfolio/35-small.jpg" class="img-responsive" alt="Cigarette break"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/34-large.jpg" title="River" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>River</h4>
+              </div>
+              <img src="img/portfolio/34-small.jpg" class="img-responsive" alt="River"> </a> </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 people">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/33-large.jpg" title="Evi" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Evi</h4>
+              </div>
+              <img src="img/portfolio/33-small.jpg" class="img-responsive" alt="Evi"> </a> </div>
+          </div>
+        </div>
         
       </div>
-    </div>
-  </div>
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+</div>
 </div>
 
 
-
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 9000);    
-}
-</script>
 </body>
 </html>
