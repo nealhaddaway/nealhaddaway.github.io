@@ -567,35 +567,35 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #488bd6;
+  color: #AED8FA;
 }
 .part.reverse_colors a {
-  color: #1d70b8;
+  color: #6FBCFB;
 }
 a:active {
-  color: #898a8a;
+  color: #DEE0E2;
 }
 .part.reverse_colors a:active {
-  color: #0b0c0c;
+  color: #C6C6C7;
 }
 a:hover {
-  color: #7583d7;
+  color: #B7FCE5;
 }
 .part.reverse_colors a:hover {
-  color: #003078;
+  color: #CAD7FA;
 }
 a:visited {
-  color: #9e75e4;
+  color: #FCFBB7;
 }
 .part.reverse_colors a:visited {
-  color: #4c2c92;
+  color: #D7B7FC;
 }
 a:focus,
 .part.reverse_colors a:focus {
-  color: #0b0c0c;
+  color: #C6C6C7;
   outline: 3px solid transparent;
   background-color: #fd0;
-  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+  box-shadow: 0 -2px #fd0, 0 4px #C6C6C7;
   text-decoration: none;
 }
 
