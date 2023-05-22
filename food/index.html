@@ -101,12 +101,32 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+.button {
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #000000; /* Green */
+  color: white;
+}
+
 </style>
 </head>
 <body>
   
   <div>
-    <h1 class="centre" style="color:rgba(0, 0, 0, 0.4);padding-bottom:50px;">The true cost of our year-round fruit and vegetables</h1>
+    <h1 class="centre" style="color:rgba(0, 0, 0, 0.4);padding-bottom:50px;padding-top:50px;">The true cost of our year-round fruit and vegetables</h1>
   </div>
 
 <div class="slideshow-container">
@@ -224,6 +244,14 @@ img {vertical-align: middle;}
 
 </div>
 <br>
+
+<!-- Footer-->
+<footer class="centre" style="padding-top:50px;padding-bottom:50px;">
+  <button class="button" style="padding-top:5px; padding-bottom:5px;" onclick="location.href='http://www.nealhaddaway.com'">www.nealhaddaway.com</button>
+  <div class="container px-4 px-lg-5" style="padding-top:50px;">Copyright &copy; Neal R. Haddaway 2023
+  </div>
+</footer>
+        
 
 <script>
 let slideIndex = 1;
